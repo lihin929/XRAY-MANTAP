@@ -75,3 +75,22 @@ chmod +x m-tcp
 chmod +x xp
 chmod +x m-dns
 cd
+#auto reboot dan auto delete akun expaired
+cat > /etc/cron.d/re_otm <<-END
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+0 2 * * * root /sbin/reboot
+END
+
+cat > /etc/cron.d/xp_otm <<-END
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+0 0 * * * root /usr/bin/xp
+END
+
+cat > /home/re_otm <<-END
+7
+END
+
+service cron restart >/dev/null 2>&1
+service cron reload >/dev/null 2>&1
