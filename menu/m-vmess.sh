@@ -30,5 +30,5 @@ case $opt in
 6) clear ; cat /etc/log-create-vmess.log ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
-*) echo "Anda salah tekan " ; sleep 1 ; m-sshovpn ;;
+*) echo "Anda salah tekan " ; sleep 1 ; m-vmess ;;
 esac
