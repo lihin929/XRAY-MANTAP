@@ -26,6 +26,8 @@ clear
 mkdir /var/lib/crot;
 echo "IP=" >> /var/lib/crot/ipvps.conf
 cd
+#masukin domain lo
+wget https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/domain/cf.sh && chmod +x cf.sh && ./cf.sh
 #install tools/alat
 wget https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/install-tools.sh && chmod +x install-tools.sh && ./install-tools.sh
 #
@@ -73,7 +75,7 @@ echo "   - Auto Delete Expired Account" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
-echo " Reboot 15 Sec"
+echo " Certv2ray and reboot in 18 sec"
 sleep 15
 cd
 rm -rf updatedll
@@ -81,4 +83,8 @@ rm -rf updatedll.sh
 rm -rf setup.sh
 rm -rf install-xray.sh
 rm -rf install-tools.sh
+clear
+certv2ray
+sleep 4
+reboot
 
