@@ -13,7 +13,7 @@ LIGHT='\033[0;37m'
 # Getting
 clear
 read -rp "Input Your Domain For This Server :" -e DOMAIN
-echo "Host : $SUB_DOMAIN"
+echo "Host : $DOMAIN"
 echo $DOMAIN > /root/domain
 # / / Make Main Directory
 mkdir -p /etc/xray
