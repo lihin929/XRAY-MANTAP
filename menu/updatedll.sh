@@ -37,6 +37,7 @@ wget -O del-ssws "https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/me
 wget -O renew-ssws "https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/xray/renew-ssws.sh" && chmod +x renew-ssws
 # menu
 wget -O menu "https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/menu.sh"
+wget -O traffic "https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/traffic.sh"
 wget -O m-vmess "https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/m-vmess.sh"
 wget -O m-vless "https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/m-vless.sh"
 wget -O running "https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/running.sh"
@@ -57,6 +58,7 @@ wget -O xp "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/xp
 wget -O m-dns "https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/m-dns.sh"
 
 chmod +x menu
+chmod +x traffic
 chmod +x m-vmess
 chmod +x m-vless
 chmod +x running
