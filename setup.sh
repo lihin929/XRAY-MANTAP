@@ -39,42 +39,48 @@ wget https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/updatedll.
 #SELESAI
 echo " "
 echo "Installation has been completed!!"echo " "
-echo "============================================================================" | tee -a log-install.txt
-echo "" | tee -a log-install.txt
-echo "----------------------------------------------------------------------------" | tee -a log-install.txt
-echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"  | tee -a log-install.txt
-echo -e "    SCRIPT MANTAP-XRAY Multi Port"  | tee -a log-install.txt
-echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
+echo ""
+echo "=================================================================="  | tee -a log-install.txt
+echo "      ___                                    ___         ___      "  | tee -a log-install.txt
+echo "     /  /\        ___           ___         /  /\       /__/\     "  | tee -a log-install.txt
+echo "    /  /:/_      /  /\         /__/\       /  /::\      \  \:\    "  | tee -a log-install.txt
+echo "   /  /:/ /\    /  /:/         \  \:\     /  /:/\:\      \  \:\   "  | tee -a log-install.txt
+echo "  /  /:/_/::\  /__/::\          \  \:\   /  /:/~/:/  _____\__\:\  "  | tee -a log-install.txt
+echo " /__/:/__\/\:\ \__\/\:\__   ___  \__\:\ /__/:/ /:/  /__/::::::::\ "  | tee -a log-install.txt
+echo " \  \:\ /~~/:/    \  \:\/\ /__/\ |  |:| \  \:\/:/   \  \:\~~\~~\/ "  | tee -a log-install.txt
+echo "  \  \:\  /:/      \__\::/ \  \:\|  |:|  \  \::/     \  \:\  ~~~  "  | tee -a log-install.txt
+echo "   \  \:\/:/       /__/:/   \  \:\__|:|   \  \:\      \  \:\      "  | tee -a log-install.txt
+echo "    \  \::/        \__\/     \__\::::/     \  \:\      \  \:\     "  | tee -a log-install.txt
+echo "     \__\/                       ~~~~       \__\/       \__\/ 1.0 "  | tee -a log-install.txt
+echo "=================================================================="  | tee -a log-install.txt
+echo ""
 echo "   >>> Service & Port"  | tee -a log-install.txt
-echo "   - Nginx                      : 89"  | tee -a log-install.txt
-echo "   - XRAYS TROJAN WS TLS        : 443"  | tee -a log-install.txt
-echo "   - XRAYS SHADOWSOCKS WS TLS   : 443"  | tee -a log-install.txt
-echo "   - XRAYS VLESS WS TLS         : 443"  | tee -a log-install.txt
-echo "   - XRAYS VMESS WS TLS         : 443"  | tee -a log-install.txt
-echo "   - XRAYS TROJAN WS HTTP       : 80"  | tee -a log-install.txt
-echo "   - XRAYS SHADOWSOCKS WS HTTP  : 80"  | tee -a log-install.txt
-echo "   - XRAYS VLESS WS HTTP        : 80"  | tee -a log-install.txt
-echo "   - XRAYS VMESS WS HTTP        : 80"  | tee -a log-install.txt
-echo "   - XRAYS TROJAN GRPC          : 443"  | tee -a log-install.txt
-echo "   - XRAYS SHADOWSOCKS GRPC     : 443"  | tee -a log-install.txt
-echo "   - XRAYS VMESS GRPC           : 443"  | tee -a log-install.txt
-echo "   - XRAYS VLESS GRPC           : 443"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "   >>> Server Information & Other Features"  | tee -a log-install.txt
-echo "   - Timezone                : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
-echo "   - Fail2Ban                : [ON]"  | tee -a log-install.txt
-echo "   - Dflate                  : [ON]"  | tee -a log-install.txt
-echo "   - IPtables                : [ON]"  | tee -a log-install.txt
-echo "   - Auto-Reboot             : [ON]"  | tee -a log-install.txt
-echo "   - IPv6                    : [OFF]"  | tee -a log-install.txt
-echo "   - Autoreboot On 05.00 GMT +7" | tee -a log-install.txt
-echo "   - Autobackup Data" | tee -a log-install.txt
-echo "   - Restore Data" | tee -a log-install.txt
-echo "   - Auto Delete Expired Account" | tee -a log-install.txt
-echo "   - Full Orders For Various Services" | tee -a log-install.txt
-echo "   - White Label" | tee -a log-install.txt
-echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
+echo "   - OpenSSH                  : 22"  | tee -a log-install.txt
+echo "   - SSH Websocket            : 80" | tee -a log-install.txt
+echo "   - SSH SSL Websocket        : 443" | tee -a log-install.txt
+echo "   - Stunnel4                 : 222, 777" | tee -a log-install.txt
+echo "   - Dropbear                 : 109, 143" | tee -a log-install.txt
+echo "   - Badvpn                   : 7100-7900" | tee -a log-install.txt
+echo "   - Nginx                    : 81" | tee -a log-install.txt
+echo "   - Vmess WS TLS             : 443" | tee -a log-install.txt
+echo "   - Vless WS TLS             : 443" | tee -a log-install.txt
+echo "   - Trojan WS TLS            : 443" | tee -a log-install.txt
+echo "   - Shadowsocks WS TLS       : 443" | tee -a log-install.txt
+echo "   - Vmess WS none TLS        : 80" | tee -a log-install.txt
+echo "   - Vless WS none TLS        : 80" | tee -a log-install.txt
+echo "   - Trojan WS none TLS       : 80" | tee -a log-install.txt
+echo "   - Shadowsocks WS none TLS  : 80" | tee -a log-install.txt
+echo "   - Vmess gRPC               : 443" | tee -a log-install.txt
+echo "   - Vless gRPC               : 443" | tee -a log-install.txt
+echo "   - Trojan gRPC              : 443" | tee -a log-install.txt
+echo "   - Shadowsocks gRPC         : 443" | tee -a log-install.txt
+echo ""
+echo "=============================Contact==============================" | tee -a log-install.txt
+echo "---------------------------github.com/lihin929/XRAY-MANTAP-----------------------------" | tee -a log-install.txt
+echo "==================================================================" | tee -a log-install.txt
+echo -e ""
+echo ""
+echo "" | tee -a log-install.txt
 echo " Certv2ray and reboot in 18 sec"
 sleep 15
 cd
