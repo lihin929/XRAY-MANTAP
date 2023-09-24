@@ -94,3 +94,5 @@ END
 
 service cron restart >/dev/null 2>&1
 service cron reload >/dev/null 2>&1
+#anu
+echo "IP=$domain" > /var/lib/ipvps.conf
