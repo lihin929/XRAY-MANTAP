@@ -139,7 +139,7 @@ cat > /home/vps/public_html/ss-$user.txt <<-END
           "headers": {
             "Host": "$domain"
           },
-          "path": "/ss-ws"
+          "path": "/xrayssws"
         }
       },
       "tag": "proxy"
