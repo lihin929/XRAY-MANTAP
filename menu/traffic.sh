@@ -2,11 +2,13 @@
 
 _APISERVER=127.0.0.1:10085
 _XRAY=/usr/local/bin/xray
+REFRESH_INTERVAL=0.5 # Ubah interval sesuai anda mau
 
-apidata () {
+# Untuk mengambil statistik data dari Xray API
+get_data_stats() {
     local ARGS=
     if [[ $1 == "reset" ]]; then
-      ARGS="reset: true"
+      ARGS="reset: false"
     fi
     $_XRAY api statsquery --server=$_APISERVER "${ARGS}" \
     | awk '{
@@ -39,14 +41,31 @@ print_sum() {
     | column -t
 }
 
-DATA=$(apidata $1)
-echo "------------Inbound----------"
-print_sum "$DATA" "inbound"
-echo "-----------------------------"
-echo "------------Outbound----------"
-print_sum "$DATA" "outbound"
-echo "-----------------------------"
-echo
-echo "-------------User------------"
-print_sum "$DATA" "user"
-echo "-----------------------------"
+# untuk melakukan pelacakan data secara real-time
+track_realtime_data() {
+    while true; do
+        clear
+        DATA=$(get_data_stats)
+        echo "------------Download----------"
+        print_sum "$DATA" "inbound"
+        echo "-----------------------------"
+        echo "------------Upload----------"
+        print_sum "$DATA" "outbound"
+        echo "-----------------------------"
+        echo
+        echo "-------------Akun------------"
+        print_sum "$DATA" "user"
+        echo "-----------------------------"
+        read -t $REFRESH_INTERVAL -n 1 -s -p "Tekan Enter untuk menuju ke menu"
+        if [ $? = 0 ]; then
+            break
+        fi
+    done
+    clear
+    menu
+}
+
+# Memulai pelacakan data secara real-time
+track_realtime_data
+
+                                                                                                       70,0-1        Bot
