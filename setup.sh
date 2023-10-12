@@ -36,6 +36,7 @@ wget https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/install-xray.sh
 #install xmenu
 wget https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/updatedll.sh && chmod +x updatedll.sh && ./updatedll.sh
 #log-install.txt
+cd
 wget https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/log-install.txt
 #
 #SELESAI
