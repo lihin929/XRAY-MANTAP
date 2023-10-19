@@ -15,6 +15,7 @@ clear
 read -rp "Input Your Domain For This Server :" -e DOMAIN
 echo "Host : $DOMAIN"
 echo $DOMAIN > /root/domain
+echo "IP=$DOMAIN" > /var/lib/ipvps.conf
 # / / Make Main Directory
 mkdir -p /etc/xray
 cp /root/domain /etc/xray
