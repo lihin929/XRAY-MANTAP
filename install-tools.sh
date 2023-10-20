@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 # ==================================================
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/xray"
+akbarvpn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/ssh"
 
 #
 cd
@@ -41,6 +41,7 @@ cat > /etc/rc.local <<-END
 # rc.local
 # By default this script does nothing.
 
+sslh-fix-reboot
 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 100
 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 100
 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 100
