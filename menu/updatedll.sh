@@ -40,6 +40,7 @@ wget -O menu "https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/m
 wget -O traffic "https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/traffic.sh"
 wget -O m-vmess "https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/m-vmess.sh"
 wget -O m-vless "https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/m-vless.sh"
+wget -O m-webmin "https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/m-webmin.sh"
 wget -O running "https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/running.sh"
 wget -O clearcache "https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/clearcache.sh"
 wget -O m-ssws "https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/m-ssws.sh"
@@ -60,6 +61,7 @@ wget -O m-dns "https://raw.githubusercontent.com/lihin929/XRAY-MANTAP/main/menu/
 chmod +x menu
 chmod +x traffic
 chmod +x m-vmess
+chmod +x m-webmin
 chmod +x m-vless
 chmod +x running
 chmod +x clearcache
