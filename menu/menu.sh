@@ -107,6 +107,7 @@ echo -e "\e[1;36m 6 \e[0m: Status Service"
 echo -e "\e[1;36m 7 \e[0m: Clear RAM Cache"
 echo -e "\e[1;36m 8 \e[0m: Reboot VPS"
 echo -e "\e[1;36m 9 \e[0m: Cek Traffic Per Akun"
+echo -e "\e[1;36m 10 \e[0m: Menu Webmin"
 echo -e "\e[1;36m x \e[0m: Exit Script"
 echo -e   ""
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
@@ -128,6 +129,7 @@ case $opt in
 7) clear ; clearcache ;;
 8) clear ; reboot ; /sbin/reboot ;;
 9) clear ; traffic ;;
+10) clear ; m-webmin ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu ;;
 esac
